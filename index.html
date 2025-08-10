@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Professional Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js for graph -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <div class="search-row">
+      <input type="text" id="cityInput" placeholder="Enter your city..." autofocus />
+      <button id="searchBtn">Search</button>
+    </div>
+    <div id="mainWeather" class="hide"></div>
+    <div id="chartSection" class="hide">
+      <canvas id="tempChart"></canvas>
+    </div>
+    <div id="fiveDayForecast" class="forecast-section hide">
+      <h2>5-Day Forecast</h2>
+      <div class="forecast-list" id="fiveDayList"></div>
+    </div>
+    <div id="hourlyForecast" class="forecast-section hide">
+      <h2>Hourly Forecast (Today)</h2>
+      <div class="forecast-list" id="hourlyList"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
